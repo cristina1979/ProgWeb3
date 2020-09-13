@@ -1,0 +1,32 @@
+import React from 'react';
+
+export default (props) => {
+
+    const carros = [
+        'Sentra' ,
+        'Brasilia' ,
+        'Jaguar' ,
+        'Onix' ,
+        'Gol' ,
+        'Jetta' ,
+        'HR-V' ,
+        'Omega'
+    ]
+
+    return (
+      <>
+         <h2>Carros</h2>
+         <ul>
+
+           { carros.map ( item => (
+
+             <li> { item } </li>
+             
+             ) ) }
+
+
+         </ul>
+
+      </>
+    )
+}
